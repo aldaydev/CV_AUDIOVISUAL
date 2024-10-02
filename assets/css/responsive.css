@@ -1,0 +1,466 @@
+@media screen and (max-width: 1505px){
+
+    .about__personal-info, .otros__music-info {
+        font-size: 1.8rem;
+    }
+
+    .timelines__timeline {
+        font-size: 1.8rem;
+    }
+
+    .otros__videos-description {
+        font-size: 1.8rem;
+    }
+
+    .video__yt {
+        height: 25rem;
+    }
+
+    .espacios__list {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+    
+    .principal__container {
+        padding: 4rem 4rem;
+    }
+
+    .about__personal-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .personal-info__data {
+        order: 1;
+    }
+
+    .personal-info__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0rem 2.5rem;
+    }
+
+    .personal-info__item {
+        display: flex;
+        margin-bottom: 1.2rem;
+        position: relative;
+    }
+
+    .personal-info__bio {
+        order: 2;
+    }
+
+    .espacios__subtitle, .skills__subtitle, .diplomas__subtitle, .otros__subtitle, .spotify__subtitle {
+        margin-bottom: 2.8rem;
+    }
+
+    .espacios__list {
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .espacios__item {
+        flex-basis: calc(50% - 8.5rem);
+        padding: 2rem 0;
+    }
+
+    .espacios__logo {
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .contact__form-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact-form__left {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form__group {
+        flex-basis: calc(50% - 1rem);
+        margin-top: 2rem;
+    }
+
+    .contact-form__left > .form__group:last-child {
+        flex-basis: 100%;
+        margin: 2.5rem 0;
+    }
+
+
+    .form__label {  
+        top: 45px;
+        left: 6px;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .form__input {
+        margin-top: 1rem;
+    }
+
+    .form__input:focus ~ .form__label,
+    .form__input:not(:placeholder-shown) ~ .form__label {
+        top: -12px;
+        left: 3px;
+    }
+
+    .form__textarea:focus ~ .form__label,
+    .form__textarea:not(:placeholder-shown) ~ .form__label {
+        position: absolute;
+        z-index: 1;
+        top: -24px;
+        left: 3px;
+        opacity: 1;
+        font-size: 1.5rem;
+    }
+
+    .form__textarea {
+        height: 25rem;
+    }
+
+    .contact__item {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .video__yt {
+        height: 20rem;
+    }
+
+    .aside__button-link {
+        font-size: 1.5rem;
+    }
+
+    .user-info__img-container {
+        min-width: 17rem;
+    }
+
+    .user-info__name {
+        font-size: 2.5rem;
+    }
+
+    .user-info__job {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+
+    
+    .contact__container {
+        flex-direction: column;
+    }
+
+    .contact__left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact__item {
+        font-size: 1.4rem;
+    }
+
+    .contact__item .fa-solid,
+    .contact__item .fa-brands {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width:1023px){
+
+    /*ESTILOS LAYOUT PRINCIPAL*/
+
+    body {
+        width: 100vw;
+        height: 100dvh;
+        max-height: 100vh;
+        overflow:auto;
+    }
+    
+    .layout {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: var(--color-principal);
+        overflow: hidden;
+    }
+
+    .layout__container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: var(--color-principal);
+        border-radius: 0;
+
+        display: block;
+
+        margin-right: 0;
+
+        position: relative;
+    }
+
+    
+    /*NAV DESKTOP Y MOBILE*/
+
+    .layout__menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .layout__aside {
+        position: absolute;
+        z-index: 900;
+        right: -70%;
+        top: 0;
+
+        width: 70%;
+        height: 100%;
+        padding: 3rem 0;
+        padding-right: 2rem;
+
+        overflow-y: auto;
+    
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 1.5rem;
+
+        transition: all .2s ease-in-out;
+    }
+
+    .aside__user-info {
+        margin-bottom: 0;
+    }
+
+    .user-info__img-container {
+        min-width: 13rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu-mobile__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2rem;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: var(--color-text);
+        padding: 2rem 0;
+    }
+
+    .menu-mobile__link {
+        width: 100%;
+    }
+
+    .menu-mobile__text {
+        position: relative;
+    }
+
+    .menu-mobile__text::after {
+        content: "";
+        width: 0%;
+        height: 0.2rem;
+        background-color: var(--color-text);
+        position: absolute;
+        top: 110%;
+        left: 0;
+        transition: width .3s ease-in-out;
+    }
+
+    .menu-mobile__link:hover .menu-mobile__text::after {
+        width: 100%;
+    }
+
+
+    .menu-toggle__button {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        top: 2.5rem;
+        right: 3rem;
+    }
+
+    .menu-toggle__link {
+        background-color: var(--color-secondary);
+        border-radius: 30%;
+
+        transition: background .3s ease-in-out;
+    }
+
+    .menu-toggle__icon {
+        display: block;
+        font-size: 4rem;
+        padding: 1rem;
+        color: var(--color-principal);
+
+        transition: color .3s ease-in-out;
+    }
+
+    .layout__principal {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        background-color: var(--color-principal);
+        border-radius: 0;
+    
+        overflow-y: auto;
+    }
+
+    .principal__container {
+        padding: 8rem 8rem;
+    }
+
+    /*ESTILOS SOBRE MI*/
+
+    .m-principal__title{
+        display: inline-block;
+    }
+
+    .espacios__item {
+        flex-basis: calc(25% - 4.5rem);
+    }
+
+    .espacios__logo {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:869px){
+
+    .skills__list {
+        margin-bottom: 0rem;
+    }
+    
+    .espacios__item {
+        flex-basis: calc(50% - 6.5rem);
+        padding: 2rem 0;
+    }
+
+    .espacios__logo {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .principal__container {
+        padding: 6rem 3rem;
+    }
+
+    .about__personal-info, .otros__music-info {
+        font-size: 1.8rem;
+    }
+
+    .estudios__timelines {
+        
+        gap: 2.5rem;
+    }
+
+    .timelines__timeline {
+        font-size: 1.8rem;
+    }
+
+    .otros__videos-description {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width:769px){
+
+    .timelines__timeline {
+        display: grid;
+        grid-template-areas: 
+        "separator title title"
+        "separator body body";
+        gap: 1rem;
+    }
+
+    .timeline__header {
+        grid-area: title;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+    }
+
+    .timeline__separator {
+        grid-area: separator;
+        height: 110%;
+    }
+
+}
+
+@media screen and (max-width:621px){
+
+    .layout__aside {
+        right: -80%;
+        width: 80%;
+    }
+    
+    .espacios__item {
+        flex-basis: calc(50% - 1.5rem);
+        padding: 2rem 0;
+    }
+    
+    .contact__left {
+        flex-wrap: wrap;
+    }
+    
+    .contact__item {
+        flex-direction: row;
+        flex-basis: calc(50% - 1rem);
+    }
+
+    .videos__video {
+        flex-basis: calc(100% - 1rem);
+    }
+
+}
+
+@media screen and (max-width:460px){
+
+    .principal__container {
+        padding: 10rem 2rem;
+    }
+    
+    .personal-info__item {
+        flex-direction: column;
+        margin-bottom: 1.2rem;
+        position: relative;
+    }
+
+    .espacios__item {
+        flex-basis: calc(100% - 1.5rem);
+        padding: 2rem 0;
+    }
+
+    .contact__item {
+        flex-basis: calc(100% - 1rem);
+    }
+
+}
+
+@media screen and (max-width:376px){
+    html {
+        font-size: 55.5%;
+    }
+}
