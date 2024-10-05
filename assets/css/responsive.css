@@ -187,6 +187,7 @@
         height: 100dvh;
         max-height: 100vh;
         overflow:auto;
+        background: none;
     }
     
     .layout {
